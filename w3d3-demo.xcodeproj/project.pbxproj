@@ -51,7 +51,7 @@
 		2AF4F93F1F97B2C300632F12 = {
 			isa = PBXGroup;
 			children = (
-				2AF4F94A1F97B2C300632F12 /* Temp */,
+				2AF4F94A1F97B2C300632F12 /* w3d3-demo */,
 				2AF4F9491F97B2C300632F12 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,7 +64,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AF4F94A1F97B2C300632F12 /* Temp */ = {
+		2AF4F94A1F97B2C300632F12 /* w3d3-demo */ = {
 			isa = PBXGroup;
 			children = (
 				2AF4F94B1F97B2C300632F12 /* AppDelegate.h */,
@@ -83,7 +83,7 @@
 				2AF4F9591F97B2C300632F12 /* Info.plist */,
 				2AF4F95A1F97B2C300632F12 /* main.m */,
 			);
-			path = Temp;
+			path = "w3d3-demo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Temp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/w3d3-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.Temp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,7 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Temp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/w3d3-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.Temp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
