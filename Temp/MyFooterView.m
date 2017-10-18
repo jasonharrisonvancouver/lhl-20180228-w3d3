@@ -1,14 +1,13 @@
 //
-//  ViewController.h
+//  MyFooterView.m
 //  Temp
 //
 //  Created by Roland Tecson on 2017-10-18.
 //  Copyright © 2017 Roland Tecson. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MyFooterView.h"
 
-@interface ViewController : UIViewController
+@implementation MyFooterView
 
 @end
-

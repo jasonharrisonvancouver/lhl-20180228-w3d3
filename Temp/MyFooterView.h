@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MyFooterView.h
 //  Temp
 //
 //  Created by Roland Tecson on 2017-10-18.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MyFooterView : UICollectionReusableView
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
-

@@ -13,10 +13,13 @@
 		2AF4F9551F97B2C300632F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF4F9541F97B2C300632F12 /* Assets.xcassets */; };
 		2AF4F9581F97B2C300632F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF4F9561F97B2C300632F12 /* LaunchScreen.storyboard */; };
 		2AF4F95B1F97B2C300632F12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F95A1F97B2C300632F12 /* main.m */; };
+		2AF4F9631F97C37000632F12 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F9621F97C37000632F12 /* MyCollectionViewCell.m */; };
+		2AF4F9661F97C89100632F12 /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F9651F97C89000632F12 /* MyHeaderView.m */; };
+		2AF4F9691F97D12E00632F12 /* MyFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F9681F97D12E00632F12 /* MyFooterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2AF4F9481F97B2C300632F12 /* Temp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Temp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF4F9481F97B2C300632F12 /* w3d3-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "w3d3-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF4F94B1F97B2C300632F12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2AF4F94C1F97B2C300632F12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2AF4F94E1F97B2C300632F12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -26,6 +29,12 @@
 		2AF4F9571F97B2C300632F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AF4F9591F97B2C300632F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AF4F95A1F97B2C300632F12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AF4F9611F97C37000632F12 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		2AF4F9621F97C37000632F12 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		2AF4F9641F97C89000632F12 /* MyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHeaderView.h; sourceTree = "<group>"; };
+		2AF4F9651F97C89000632F12 /* MyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyHeaderView.m; sourceTree = "<group>"; };
+		2AF4F9671F97D12E00632F12 /* MyFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFooterView.h; sourceTree = "<group>"; };
+		2AF4F9681F97D12E00632F12 /* MyFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFooterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +59,7 @@
 		2AF4F9491F97B2C300632F12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AF4F9481F97B2C300632F12 /* Temp.app */,
+				2AF4F9481F97B2C300632F12 /* w3d3-demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +72,12 @@
 				2AF4F94E1F97B2C300632F12 /* ViewController.h */,
 				2AF4F94F1F97B2C300632F12 /* ViewController.m */,
 				2AF4F9511F97B2C300632F12 /* Main.storyboard */,
+				2AF4F9611F97C37000632F12 /* MyCollectionViewCell.h */,
+				2AF4F9621F97C37000632F12 /* MyCollectionViewCell.m */,
+				2AF4F9641F97C89000632F12 /* MyHeaderView.h */,
+				2AF4F9651F97C89000632F12 /* MyHeaderView.m */,
+				2AF4F9671F97D12E00632F12 /* MyFooterView.h */,
+				2AF4F9681F97D12E00632F12 /* MyFooterView.m */,
 				2AF4F9541F97B2C300632F12 /* Assets.xcassets */,
 				2AF4F9561F97B2C300632F12 /* LaunchScreen.storyboard */,
 				2AF4F9591F97B2C300632F12 /* Info.plist */,
@@ -74,9 +89,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AF4F9471F97B2C300632F12 /* Temp */ = {
+		2AF4F9471F97B2C300632F12 /* w3d3-demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AF4F95E1F97B2C300632F12 /* Build configuration list for PBXNativeTarget "Temp" */;
+			buildConfigurationList = 2AF4F95E1F97B2C300632F12 /* Build configuration list for PBXNativeTarget "w3d3-demo" */;
 			buildPhases = (
 				2AF4F9441F97B2C300632F12 /* Sources */,
 				2AF4F9451F97B2C300632F12 /* Frameworks */,
@@ -86,9 +101,9 @@
 			);
 			dependencies = (
 			);
-			name = Temp;
+			name = "w3d3-demo";
 			productName = Temp;
-			productReference = 2AF4F9481F97B2C300632F12 /* Temp.app */;
+			productReference = 2AF4F9481F97B2C300632F12 /* w3d3-demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2AF4F9431F97B2C300632F12 /* Build configuration list for PBXProject "Temp" */;
+			buildConfigurationList = 2AF4F9431F97B2C300632F12 /* Build configuration list for PBXProject "w3d3-demo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AF4F9471F97B2C300632F12 /* Temp */,
+				2AF4F9471F97B2C300632F12 /* w3d3-demo */,
 			);
 		};
 /* End PBXProject section */
@@ -143,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AF4F9501F97B2C300632F12 /* ViewController.m in Sources */,
+				2AF4F9691F97D12E00632F12 /* MyFooterView.m in Sources */,
 				2AF4F95B1F97B2C300632F12 /* main.m in Sources */,
+				2AF4F9631F97C37000632F12 /* MyCollectionViewCell.m in Sources */,
 				2AF4F94D1F97B2C300632F12 /* AppDelegate.m in Sources */,
+				2AF4F9661F97C89100632F12 /* MyHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +321,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AF4F9431F97B2C300632F12 /* Build configuration list for PBXProject "Temp" */ = {
+		2AF4F9431F97B2C300632F12 /* Build configuration list for PBXProject "w3d3-demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AF4F95C1F97B2C300632F12 /* Debug */,
@@ -312,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AF4F95E1F97B2C300632F12 /* Build configuration list for PBXNativeTarget "Temp" */ = {
+		2AF4F95E1F97B2C300632F12 /* Build configuration list for PBXNativeTarget "w3d3-demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AF4F95F1F97B2C300632F12 /* Debug */,
