@@ -34,9 +34,11 @@
     // We are the datasource for the collectionview
     self.collectionView.dataSource = self;
     
+    // Create and set up all the properties of the layout object
     [self setupSimpleLayout];
     [self setupSmallLayout];
     
+    // Assign the layout to the collection
     self.collectionView.collectionViewLayout = self.simpleLayout;
 }
 
@@ -48,12 +50,9 @@
     self.simpleLayout = [[UICollectionViewFlowLayout alloc] init];
     
     self.simpleLayout.itemSize = CGSizeMake(100, 100); // Set size of cell
-    self.simpleLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);  // "Border around each section"
+    self.simpleLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);  // Padding around each section
     self.simpleLayout.minimumInteritemSpacing = 15;  // Minimum horizontal spacing between cells
     self.simpleLayout.minimumLineSpacing = 10;  // Minimum vertical spacing
-    
-//    // Add this line so headers will appear. If this line is not present, headers will not appear
-//    self.simpleLayout.headerReferenceSize = CGSizeMake(self.collectionView.frame.size.width, 50);
     
     // By default, direction is vertical
     self.simpleLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -81,6 +80,7 @@
 
 - (IBAction)playTapped:(id)sender
 {
+    // Toggle layout between the two, determine which layout to switch to
     UICollectionViewLayout *nextLayout;
     if (self.collectionView.collectionViewLayout == self.simpleLayout) {
         nextLayout = self.smallLayout;
@@ -88,6 +88,8 @@
     else {
         nextLayout = self.simpleLayout;
     }
+    
+    // Switch layout
     [self.collectionView.collectionViewLayout invalidateLayout];
     [self.collectionView setCollectionViewLayout:nextLayout
                                         animated:YES];
@@ -98,19 +100,19 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 5;
+    return 5;  // We have 5 sections
 }
 
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section
 {
     switch (section) {
-        case 0:
-            return 5;
+        case 0:           // For section 0...
+            return 5;     // ...we have 5 items
         case 1:
-            return 3;
+            return 13;
         case 2:
-            return 8;
+            return 24;
         default:
             return 7;
     }
@@ -119,8 +121,31 @@
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView
                                    cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    MyCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"myCell"
+    NSString *cellId = @"myCell";  // Reuse identifier
+    switch (indexPath.section) {
+        case 0:  // Section 0....
+            cellId = @"myCell";  // ...use "myCell"
+            break;
+        case 1:
+            cellId = @"myWhiteCell";
+            break;
+        case 2:
+            cellId = @"myGreenCell";
+            break;
+        case 3:
+            cellId = @"myCell";
+            break;
+        case 4:
+        default:
+            cellId = @"myWhiteCell";
+            break;
+    }
+
+    // Ask collection view to give us a cell that we can use to populate our data
+    MyCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:cellId
                                                    forIndexPath:indexPath];
+    
+    // Cell will display the section and row number
     NSString *labelText = [NSString stringWithFormat:@"%ld-%ld", (long)indexPath.section, (long)indexPath.row];
     cell.label.text = labelText;
     
